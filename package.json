@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mattrudin/regExTester/issues"
   },
-  "homepage": "https://github.com/mattrudin/regExTester#readme"
+  "homepage": "https://github.com/mattrudin/regExTester#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
