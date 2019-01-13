@@ -12,5 +12,14 @@ describe('Test suite for Hex test function', () => {
     });
     test('#GGG to be false', () => {
         expect(isValidHex('#GGG')).toBeFalsy();
-    })
+    });
+    test('@578E9A to be false', () => {
+        expect(isValidHex('@578E9A')).toBeFalsy();
+    });
+    test('#578e9a to be true', () => {
+        expect(isValidHex('#578e9a')).toBeTruthy();
+    });
+    test('#578E9 to be false', () => {
+        expect(isValidHex('#578E9')).toBeFalsy();
+    });
 })
