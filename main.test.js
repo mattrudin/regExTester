@@ -1,4 +1,4 @@
-import { isValidHex } from './main';
+import { isValidHex, isValidEmail } from './main';
 
 describe('Test suite for Hex test function', () => {
     test('#FF4569 to be true', () => {
@@ -22,4 +22,10 @@ describe('Test suite for Hex test function', () => {
     test('#578E9 to be false', () => {
         expect(isValidHex('#578E9')).toBeFalsy();
     });
+})
+
+describe('Test suite for email verification',() => {
+    test('abc@abc.com to be true', () => {
+        expect(isValidEmail('abc@abc.com')).toBeTruthy();
+    })
 })
