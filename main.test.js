@@ -1,4 +1,4 @@
-const isValidHex = require('./main');
+import { isValidHex } from './main';
 
 describe('Test suite for Hex test function', () => {
     test('#FF4569 to be true', () => {
